@@ -683,6 +683,7 @@ class Menu:
                 col = CYAN_BRIGHT if active else GREY
                 draw_text(screen, label, F_SM, col, rect.centerx, rect.centery)
 
+            btn_rects = []
             if self.mode == "1P":
                 # Sub-label
                 sub = F_XS.render("SELECT DIFFICULTY", True, GREY)
